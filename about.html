@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>About Page</title>
+</head>
+
+<body class = "content">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">The Real Rook</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/"> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="about.html"><b> <i>About</i></b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html"> Decks </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="reviews.html"> Reviews </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bid.html"> Bid Calculator </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  <h1 class = "test" style = "padding-top: 10px"> <b> A Blaze of Lightning</b></h1>
+
+  <div class="row">
+      <div class="column">
+          <div class="image">
+              <img class = "crystal" id = "myImg" alt="" src="images/screenshots/risfor.jpg" width = "550 px" height = "400px"/>
+            </div>
+            <div id="myModal" class="modal">
+        
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+              
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+              
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+              </div>
+
+      </div>
+
+      <div class="column">
+          <h2 class = "bio">     </h2> <br> 
+          <p style="padding-left: 20px";>
+            A wind turned cold. Beware the power of the Rook. The eerie black bird can make all the difference.
+          </p>
+          </p> <br>
+          <p style="padding-left: 20px;">
+            Four players. Partner or not. You bid. You name trump. You take tricks (if you're smart). But beware the wild ROOK! When he lands, everything can change.
+          </p> <br> 
+          <p style="padding-left: 20px;">
+            A classic game. Oh, my! Hard than bridge. Harder than hearts. Custom-designed cards. Gorgeous. Perfrect for a dark, stormy night.
+          </p>
+
+      </div>
+    </div>
+  
+      
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+ 
+
+  <div class="footer">
+      <p class = "footer2">Click <a class = "b" href = "https://github.com/BYU-CS-260-Winter-2019/lab-1-barnummk" target="_blank"> Here </a> for Git Hub Link</p>
+    </div>
+ 
+</body>
+
+</html>
